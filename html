@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create a column layout with Flexbox */
+.row {
+  display: flex;
+}
+
+/* Left column (menu) */
+.left {
+  flex: 20%;
+  padding: 0px 0;
+}
+
+.left h2 {
+  padding-left: 8px;
+}
+
+/* Right column (page content) */
+.right {
+  flex: 65%;
+  padding: 15px;
+}
+
+/* Style the search box */
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid #ddd;
+}
+
+/* Style the navigation menu inside the left column */
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myMenu li a {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  display: block
+}
+
+#myMenu li a:hover {
+  background-color: #e6f7ff;
+}
+</style>
+</head>
+<body>
+
+<div class="row">
+  <div class="left" style="background-color:#e6f7ff;">
+    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a game">
+    <ul id="myMenu">
+   	  <li><a href="#">101 – The Temples of Syrinx – (Rush)</a></li>
+<li><a href="#">102 – Blues Before & After – (The Smithereens)</a></li>
+<li><a href="#">103 – Break on Through – (The Doors)</a></li>
+<li><a href="#">104 – Crocodile Rock – (Elton John)</a></li>
+<li><a href="#">105 – Do it Again – (Steely Dan)</a></li>
+<li><a href="#">106 – Don’t You – (Candlebox)</a></li>
+<li><a href="#">107 – Drivin’ Rain – (Gov’t Mule)</a></li>
+<li><a href="#">108 – Eight Miles High – (The Byrds)</a></li>
+<li><a href="#">109 – Fantasy – (Aldo Nova)</a></li>
+<li><a href="#">110 – Fool – (Rollins Band)</a></li>
+<li><a href="#">111 – For The Love Of God – (Steve Vai)</a></li>
+<li><a href="#">112 – Free Bird – (Lynyrd Skynyrd)</a></li>
+<li><a href="#">113 – Immigrant Song – (Led Zeppelin)</a></li>
+<li><a href="#">114 – Just Because – (Jane’s Addiction)</a></li>
+<li><a href="#">115 – Live – (Lenny Kravitz)</a></li>
+<li><a href="#">116 – Mexicola – (Queens of the Stone Age)</a></li>
+<li><a href="#">117 – Rock instrumental</a></li>
+<li><a href="#">118 – Latin/jazz/funk instrumental</a></li>
+<li><a href="#">119 – Rock instrumental</a></li>
+<li><a href="#">120 – Rock instrumental</a></li>
+<li><a href="#">121 – Runnin’ Down a Dream – (Tom Petty)</a></li>
+<li><a href="#">122 – Start Me Up – (The Rolling Stones)</a></li>
+<li><a href="#">123 – Stockholm Syndrome – (Muse)</a></li>
+<li><a href="#">124 – Diary of Jane – (Breaking Benjamin)</a></li>
+<li><a href="#">125 – R&B/soul</a></li>
+<li><a href="#">126 – Rock instrumental</a></li>
+<li><a href="#">127 – Urgent – (Foreigner)</a></li>
+<li><a href="#">128 – Vertigo – (U2)</a></li>
+<li><a href="#">129 – Wheel in the Sky – (Journey)</a></li>
+<li><a href="#">130 – Won’t Get Fooled Again – (The Who)</a></li>
+<li><a href="#">131 – Klein Mandelbrot – (Blue Man Group)</a></li>
+<li><a href="#">132 – Drumbone – (Blue Man Group)</a></li>
+<li><a href="#">301 – Float On – (Modest Mouse)</a></li>
+<li><a href="#">302 – I Want You Back – (The Jackson Five)</a></li>
+<li><a href="#">303 – In My Pocket – (The Cat Empire)</a></li>
+<li><a href="#">304 – It’s Still Rock And Roll To Me – (Billy Joel)</a></li>
+<li><a href="#">305 – Brothers Gonna Work It Out – (Public Enemy)</a></li>
+<li><a href="#">306 – Lose Yourself – (Eminem)</a></li>
+<li><a href="#">307 – Ride Like The Wind – (Christopher Cross)</a></li>
+<li><a href="#">308 – Run to You – (Bryan Adams)</a></li>
+<li><a href="#">309 – Save Room – (John Legend)</a></li>
+<li><a href="#">310 – Vogue – (Madonna)</a></li>
+<li><a href="#">311 – You Make Loving Fun – (Fleetwood Mac)</a></li>
+<li><a href="#">312 – My Everything – (Barry White)</a></li>
+<li><a href="#">501 – Latin/jazz/rock instrumental)</a></li>
+<li><a href="#">502 – Country/bluegrass instrumental)</a></li>
+<li><a href="#">503 – Funk instrumental)</a></li>
+<li><a href="#">504 – Smokin Gun – (Robert Cray)</a></li>
+<li><a href="#">505 – Jazz instrumental</a></li>
+<li><a href="#">506 – The Thrill Is Gone – (B.B. King)</a></li>
+<li><a href="#">507 – Who Did You Think I Was – (John Mayer)</a></li>
+<li><a href="#">508 – Pivot – (Dry)</a></li>
+<li><a href="#">701 – Cyanide – (Metallica)</a></li>
+<li><a href="#">702 – Endangered Species – (Flaw)</a></li>
+<li><a href="#">703 – For Whom The Bell Tolls – (Metallica)</a></li>
+<li><a href="#">704 – Forever Down – (Black Label Society)</a></li>
+<li><a href="#">705 – How Heavy This Axe – (The Sword)</a></li>
+<li><a href="#">706 – Just One Fix – (Ministry)</a></li>
+<li><a href="#">707 – Know your Enemy – (Rage Against the Machine)</a></li>
+<li><a href="#">708 – Let’s Go – (Ministry)</a></li>
+<li><a href="#">709 – Mouth for War – (Pantera)</a></li>
+<li><a href="#">710 – Painkiller – (Judas Priest)</a></li>
+<li><a href="#">711 – Paranoid – (Black Sabbath)</a></li>
+<li><a href="#">712 – Temptation’s Wings – (Down)</a></li>
+<li><a href="#">713 – The Wicker Man – (Iron Maiden)</a></li>
+<li><a href="#">714 – Unreal – (Ill Nino)</a></li>
+<li><a href="#">715 – Wake Up Dead – (Megadeth)</a></li>
+<li><a href="#">716 – We Call This Mutha Revenge – (Suicidal Tendencies)</a></li>
+<li><a href="#">718 – You’ve Got Another Thing Comin – (Judas Priest)</a></li>
+<li><a href="#">901 – Moving Right Along – (The Muppets)</a></li>
+<li><a href="#">902 – The Rainbow Connection – (The Muppets)</a></li>
+<li><a href="#">903 – Your Attitude Towards Cuttlefish – (Paper Moon)</a></li>
+<li><a href="#">904 – Night on Bald Mountain – (Modest Mussorgsk)</a></li>
+    </ul>
+  </div>
+  
+  
+    
+  </div>
+</div>
+
+<script>
+function myFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+</body>
+</html>
